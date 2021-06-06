@@ -6,7 +6,7 @@ require 'clockwork'
 
 include Clockwork
 @fif = FezInfoFetcher.new
-@bot = Discordrb::Bot.new token: 'MjgzODkwMjU0MTYxNjQxNDcz.DGC8Sw.un1zuKlEnSJ04lJGg5NNcpurQq0', client_id: 283890254161641473
+@bot = Discordrb::Bot.new token: ENV['DISCORD_TOKEN'], client_id: ENV['DISCORD_ID']
 @ids = [] #[281756793506627584, 298436402184585220]
 DISCORD_MESSAGE_MAX_SIZE = 1500
 

@@ -3,7 +3,7 @@
 require 'discordrb'
 require 'faraday'
 require 'json'
-bot = Discordrb::Bot.new token: 'ODUwOTYxMDEzODU5ODExMzY5.YLxVMw.I0h4UFIF07TIVgfj09f8hOr-eUo', client_id: 850961013859811369
+bot = Discordrb::Bot.new token: ENV['DISCORD_TOKEN'], client_id: ENV['DISCORD_ID']
 
 def user_name(event)
   au = event.author
